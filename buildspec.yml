@@ -7,9 +7,11 @@ version: 0.2
 #    LOGIN_PASSWORD: "dockerLoginPassword"
 
 phases:
-#  install:
-#    commands:
-#      - echo Entered the install phase...
+  install:
+    commands:
+      - echo Entered the install phase...
+      - yum update
+      - yum upgrade
 #      - apt-get update -y
 #      - apt-get install -y maven
   pre_build:

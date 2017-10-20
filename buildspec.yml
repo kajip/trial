@@ -12,15 +12,15 @@ phases:
 #      - echo Entered the install phase...
 #      - apt-get update -y
 #      - apt-get install -y maven
-#  pre_build:
-#    commands:
-#      - echo Entered the pre_build phase...
-#      - docker login –u User –p $LOGIN_PASSWORD
+  pre_build:
+    commands:
+      - echo Entered the pre_build phase...
+      - chmod x+u gradlew
+      - gradle -version
   build:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
-      - pwd
       - ls -al
       - gradle build
   post_build:

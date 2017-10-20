@@ -1,0 +1,40 @@
+plugins {
+    id 'org.springframework.boot' version '1.5.7.RELEASE'
+}
+
+apply plugin: 'groovy'
+
+repositories {
+    jcenter()
+//    mavenCentral()
+}
+
+ext {
+    lombokVersion = '1.16.14'
+    groovyVersion = '2.4.7'
+
+    springBootVersion = '1.5.7.RELEASE'
+    springFrameworkVersion = '4.3.11.RELEASE'
+
+    slf4jVersion = '1.7.25'
+
+    spockVersion = '1.1-groovy-2.4'
+}
+
+dependencies {
+    compile "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+
+    testCompile "org.spockframework:spock-core:${spockVersion}"
+    testCompile "org.spockframework:spock-spring:${spockVersion}"
+
+    testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
+
+    // Springのコントローラテストで必要
+    testCompile "org.springframework.boot:spring-boot-starter-test:${springBootVersion}"
+
+    // クラスのモックテスト
+    testCompile "cglib:cglib-nodep:3.2.5"
+
+}

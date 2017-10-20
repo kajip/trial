@@ -10,20 +10,20 @@ phases:
   install:
     commands:
       - echo Entered the install phase...
-      - yum update
-      - yum upgrade
+#      - yum update
+#      - yum upgrade
 #      - apt-get update -y
 #      - apt-get install -y maven
   pre_build:
     commands:
       - echo Entered the pre_build phase...
-      - gradle -version
+      - chmod u+x gradlew
   build:
     commands:
       - echo Entered the build phase...
       - echo Build started on `date`
       - ls -al
-      - gradle build
+      - ./gradlew build
   post_build:
     commands:
       - echo Entered the post_build phase...

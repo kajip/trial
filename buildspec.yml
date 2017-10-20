@@ -15,7 +15,6 @@ phases:
   pre_build:
     commands:
       - echo Entered the pre_build phase...
-      - chmod x+u gradlew
       - gradle -version
   build:
     commands:

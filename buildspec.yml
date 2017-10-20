@@ -21,7 +21,7 @@ phases:
       - echo Entered the build phase...
       - echo Build started on `date`
       - pwd
-      - ls -a
+      - ls -al
   post_build:
     commands:
       - echo Entered the post_build phase...

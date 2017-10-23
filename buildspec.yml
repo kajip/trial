@@ -30,5 +30,6 @@ phases:
       - echo Build completed on `date`
 artifacts:
   files:
+    - appspec.yml
     - build/libs/trial-*.jar
   discard-paths: yes

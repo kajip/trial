@@ -10,10 +10,6 @@ phases:
   install:
     commands:
       - echo Entered the install phase...
-#      - yum update
-#      - yum upgrade
-#      - apt-get update -y
-#      - apt-get install -y maven
   pre_build:
     commands:
       - echo Entered the pre_build phase...

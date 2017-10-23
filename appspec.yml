@@ -1,5 +1,5 @@
 version: 0.0
 os: linux
 files:
-  - source: build/libs/trial-1.0.jar
+  - source: trial-1.0.jar
     destination: /home/ec2-user/trial-1.0.jar

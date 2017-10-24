@@ -25,6 +25,6 @@ phases:
 artifacts:
   files:
     - appspec.yml
-    - etc/DeployScripts/*.sh
+    - etc/deployScripts/*.sh
     - build/libs/trial-*.jar
   discard-paths: yes

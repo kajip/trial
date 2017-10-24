@@ -17,10 +17,10 @@ permissions:
     mode: 755
     type:
       - directory
-hooks:
-  ApplicationStop:
-    - location: applicationStop.sh
-      timeout: 60
-  ApplicationStart:
-    - location: applicationStart.sh
-      timeout: 60
+#hooks:
+#  ApplicationStop:
+#    - location: applicationStop.sh
+#      timeout: 60
+#  ApplicationStart:
+#    - location: applicationStart.sh
+#      timeout: 60

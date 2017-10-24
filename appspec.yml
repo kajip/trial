@@ -17,3 +17,7 @@ permissions:
     mode: 755
     type:
       - directory
+hooks:
+  AfterInstall:
+    - location: applicationStart.sh
+      timeout: 60

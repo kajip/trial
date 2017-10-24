@@ -7,6 +7,10 @@ version='1.0'
 
 apply plugin: 'groovy'
 
+springBoot {
+  executable = true
+}
+
 repositories {
     jcenter()
 //    mavenCentral()
